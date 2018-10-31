@@ -19,7 +19,7 @@ public class GoalAchieved : MonoBehaviour {
         if (other.gameObject.tag == "Player") {
             Debug.Log("Game Over. You succeeded");
             Time.timeScale = 0;
-            Application.Quit();
+            DisplayGameOver.GameOver.Invoke();
         }
     }
 }

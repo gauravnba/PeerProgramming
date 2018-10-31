@@ -46,7 +46,7 @@ public class NPCBehaviour : MonoBehaviour {
         {
             Debug.Log("Game Over. You failed");
             Time.timeScale = 0;
-            Application.Quit();
+            DisplayGameOver.GameOver.Invoke();
         }
     }
 }
